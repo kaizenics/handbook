@@ -16,7 +16,7 @@ export default function Chat() {
           <Image
             src={hcdcStroke}
             alt="HCDC"
-            className="w-[1555px] h-[920px] absolute top-0 right-0 bottom-0 opacity-15"
+            className="w-[1855px] h-[940px] absolute top-0 right-0 bottom-0 opacity-15"
           />
           <div className="mx-5 my-7">
             <h1 className="text-black text-4xl">Welcome Back,</h1>
@@ -31,45 +31,48 @@ export default function Chat() {
                 <p className="text-black font-inter font-thin text-5xl">
                   an AI Assistant
                 </p>
-                <VscSparkleFilled className="text-red-700 w-[50px] h-[50px]" />
+                <VscSparkleFilled className="text-blue-700 w-[50px] h-[50px]" />
               </div>
             </div>
           </div>
           <div className="font-inter flex justify-center items-center my-6">
             <div className="grid grid-cols-3 gap-4 relative">
-              <div className="relative w-[400px] h-[200px] bg-red-700 rounded">
-                <p className="py-8 px-5 text-4xl text-left">
+              <div className="relative w-[400px] h-[200px] bg-red-700 border rounded-md transition-all duration-300 hover:scale-105">
+                <p className="py-8 px-5 text-3xl text-left text-white">
                   What is the prescribe haircut for males?
                 </p>
-                <FaSearch className="w-[30px] h-[30px] absolute bottom-3 right-3" />
+                <FaSearch className="w-[30px] h-[30px] absolute bottom-3 right-3 text-white" />
               </div>
-              <div className="relative w-[400px] h-[200px] bg-red-700 rounded">
-                <p className="py-8 px-5 text-4xl text-left">What is CET?</p>
-                <FaSearch className="w-[30px] h-[30px] absolute bottom-3 right-3" />
+              <div className="relative w-[400px] h-[200px] bg-red-700 rounded-md transition-all duration-300 hover:scale-105">
+                <p className="py-8 px-5 text-3xl text-left text-white">What is CET?</p>
+                <FaSearch className="w-[30px] h-[30px] absolute bottom-3 right-3 text-white" />
               </div>
-              <div className="relative w-[400px] h-[200px] bg-red-700 rounded">
-                <p className="py-8 px-5 text-4xl text-left">
+              <div className="relative w-[400px] h-[200px] bg-red-700 rounded-md transition-all duration-300 hover:scale-105">
+                <p className="py-8 px-5 text-3xl text-left text-white">
                   Courses offered by Holy Cross of Davao College?
                 </p>
-                <FaSearch className="w-[30px] h-[30px] absolute bottom-3 right-3" />
+                <FaSearch className="w-[30px] h-[30px] absolute bottom-3 right-3 text-white" />
               </div>
             </div>
           </div>
           <div className="font-inter flex justify-center items-center space-x-4 mt-10">
-            <FaWandMagicSparkles className="text-red-700 w-[50px] h-[50px]" />
-            <h1 className="font-regular text-red-700 text-4xl">
+            <FaWandMagicSparkles className="text-red-700 w-[30px] h-[30px]" />
+            <h1 className="font-regular text-red-700 text-2xl">
               How can I help you today?
             </h1>
           </div>
           <div className="flex justify-center mt-52">
-                    <div className="relative">
-                        <input
-                            className="w-[1000px] h-[56px] outline-none py-4 pl-4 pr-14 text-black bg-gray-200 border border-gray-200 rounded-full"
-                            type="text"/>
-                        <button
-                            className="absolute font-montserrat bg-red-700 py-3 px-3 rounded-full top-2 right-2"><FaArrowUp className="w-[15px] h-[15px]" /></button>
-                    </div>
-                </div>
+            <div className="relative">
+              <input
+                placeholder="Ask Gab and Ana..."
+                className="font-inter w-[1000px] h-[56px] outline-none py-4 pl-4 pr-14 text-black bg-gray-200 border border-gray-200 rounded-full placeholder:text-red-700"
+                type="text"
+              />
+              <button className="absolute font-montserrat bg-red-700 py-3 px-3 rounded-full top-2 right-2 transition duration-300 hover:bg-red-800">
+                <FaArrowUp className="w-[15px] h-[15px]" />
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </>
