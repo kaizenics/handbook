@@ -33,7 +33,7 @@ export default function Chat() {
             <>
               <div className="mx-5 my-7">
                 <h1 className="text-black text-4xl">Welcome Back,</h1>
-                <p className="text-red-700 font-semibold text-5xl">User</p>
+                <p className="text-blue-700 font-semibold text-5xl">User</p>
               </div>
               <div className="flex relative justify-center items-center ">
                 <div className="mt-14">
