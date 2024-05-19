@@ -25,7 +25,8 @@ export default function Chat() {
             <Image
               src={hcdcStroke}
               alt="HCDC"
-              className="w-[1855px] h-[940px] absolute top-0 right-0 bottom-0 opacity-15"
+              className="w-[1855px] h-[10px] absolute top-0 right-0 bottom-0 opacity-15"
+              layout="responsive"
             />
           )}
           {!hasStartedConversation ? (
@@ -36,11 +37,11 @@ export default function Chat() {
               </div>
               <div className="flex relative justify-center items-center ">
                 <div className="mt-14">
-                  <h1 className="mt-4 text-black font-inter text-6xl font-bold tracking-tighter uppercase">
+                  <h1 className="mt-4 text-black font-montserrat text-6xl font-bold tracking-tighter uppercase">
                     HCDC Student Handbook
                   </h1>
                   <div className="flex space-x-3 justify-end">
-                    <p className="text-black font-inter font-thin text-5xl">
+                    <p className="text-black font-montserrat font-regular text-5xl">
                       an AI Assistant
                     </p>
                     <VscSparkleFilled className="text-blue-700 w-[50px] h-[50px]" />
@@ -75,7 +76,7 @@ export default function Chat() {
                   How can I help you today?
                 </h1>
               </div>
-              <div className="max-w-screen-xl w-[65%] mx-auto">
+              <div className="max-w-screen-lg w-[65%] mx-auto">
                 <div className="absolute flex justify-center bottom-7">
                   <div className="relative">
                     <input
@@ -94,7 +95,7 @@ export default function Chat() {
               </div>
             </>
           ) : (
-            <div className="font-inter max-w-screen-lg w-[65%] mx-auto my-7">
+            <div className="font-inter max-w-screen-lg w-[63%] mx-auto my-7">
               <div className="mt-5">
                 <h1 className="mt-4 text-black font-inter text-2xl font-bold tracking-tighter uppercase">
                   HCDC Student Handbook
