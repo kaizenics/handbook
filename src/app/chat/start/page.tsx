@@ -6,6 +6,7 @@ export default function Start() {
       <Sidebar />
       <div className="flex-1 relative">
         <h1 className="text-black">Start</h1>
+        <p className="text-black text-3xl">Project IDX Test Run</p>
       </div>
     </div>
   );
