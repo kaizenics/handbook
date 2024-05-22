@@ -1,3 +1,4 @@
+// library/page.tsx
 "use client";
 import { useState } from "react";
 import { Sidebar } from "~/components/sidebar";
@@ -7,30 +8,33 @@ import { BsThreeDots } from "react-icons/bs";
 import { IoMdAdd } from "react-icons/io";
 import { FaSearch } from "react-icons/fa";
 import { useRouter } from "next/navigation";
+import PromptModal from "~/components/promptModal";
+import CollectModal from "~/components/collectModal";
 
 export default function Threads() {
-
+  const [showPromptModal, setShowPromptModal] = useState(false);
+  const [showCollectModal, setShowCollectModal] = useState(false);
   const router = useRouter();
-  
+
   const threadsData = [
     {
       title: "What is the Prescribed haircut for Male?",
       content:
         "The prescribed haircut for men typically refers to a haircut that is required or recommended in certain formal, professional, or institutional settings, such as the military, law enforcement, certain schools, or corporate environments.",
-      onClick: () => router.push("/chat/start")
+      onClick: () => router.push("/chat/start"),
     },
     {
       title: "What is CET?",
       content:
         "A College of Engineering and Technology is an academic institution within a university or as a standalone entity that offers undergraduate and graduate programs in various engineering and technology fields. These colleges typically provide education and training in disciplines such as civil engineering, mechanical engineering, electrical engineering, computer science, information technology, aerospace engineering, chemical engineering, and many others.",
-      onClick: () => router.push("/chat/start")
+      onClick: () => router.push("/chat/start"),
     },
     {
       title: "Courses offered by Holy Cross of Davao College?",
       content:
         "Holy Cross of Davao College (HCDC) offers a range of undergraduate and graduate programs across various fields. However, specific course offerings may vary over time, so it's best to directly consult the college's official website or contact them for the most up-to-date information.",
-      onClick: () => router.push("/chat/start")
-    }
+      onClick: () => router.push("/chat/start"),
+    },
   ];
 
   return (
@@ -71,7 +75,10 @@ export default function Threads() {
                   <button className="bg-red-800 text-white p-2 rounded-md transition duration-200 hover:bg-red-900">
                     <BsThreeDots className="w-[15px] h-[15px] text-white" />
                   </button>
-                  <button className="bg-red-800 text-white p-2 rounded-md transition duration-200 hover:bg-red-900">
+                  <button
+                    className="bg-red-800 text-white p-2 rounded-md transition duration-200 hover:bg-red-900"
+                    onClick={() => setShowPromptModal(true)}
+                  >
                     <IoMdAdd className="w-[15px] h-[15px] text-white" />
                   </button>
                 </div>
@@ -94,7 +101,6 @@ export default function Threads() {
             ))}
           </section>
 
-
           <section className="w-[300px] py-4">
             <div className="py-1 border-b border-gray-300">
               <div className="flex justify-between">
@@ -105,7 +111,10 @@ export default function Threads() {
                   <h1 className="text-black font-semibold pt-1">Collections</h1>
                 </div>
                 <div className="flex space-x-1">
-                  <button className="bg-red-800 text-white p-2 rounded-md transition duration-200 hover:bg-red-900">
+                  <button
+                    className="bg-red-800 text-white p-2 rounded-md transition duration-200 hover:bg-red-900"
+                    onClick={() => setShowCollectModal(true)}
+                  >
                     <IoMdAdd className="w-[15px] h-[15px] text-white" />
                   </button>
                 </div>
@@ -117,7 +126,7 @@ export default function Threads() {
                 <p className="text-black font-inter text-center text-sm">
                   Organize your threads. Categorize it or share to others!
                 </p>
-                <button className="bg-red-800 text-white py-1.5 rounded-md text-xs w-full transition duration-200 hover:bg-red-900">
+                <button className="bg-red-800 text-white py-1.5 rounded-md text-xs w-full transition duration-200 hover:bg-red-900" onClick={() => setShowCollectModal(true)}>
                   Get Started
                 </button>
               </div>
@@ -125,6 +134,8 @@ export default function Threads() {
           </section>
         </div>
       </div>
+      <PromptModal show={showPromptModal} onClose={() => setShowPromptModal(false)} />
+      <CollectModal show={showCollectModal} onClose={() => setShowCollectModal(false)} />
     </div>
   );
 }
