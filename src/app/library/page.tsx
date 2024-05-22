@@ -1,12 +1,38 @@
+"use client";
+import { useState } from "react";
 import { Sidebar } from "~/components/sidebar";
 import { GoStack } from "react-icons/go";
 import { HiOutlineCollection } from "react-icons/hi";
 import { BsThreeDots } from "react-icons/bs";
 import { IoMdAdd } from "react-icons/io";
 import { FaSearch } from "react-icons/fa";
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function Threads() {
+
+  const router = useRouter();
+  
+  const threadsData = [
+    {
+      title: "What is the Prescribed haircut for Male?",
+      content:
+        "The prescribed haircut for men typically refers to a haircut that is required or recommended in certain formal, professional, or institutional settings, such as the military, law enforcement, certain schools, or corporate environments.",
+      onClick: () => router.push("/chat/start")
+    },
+    {
+      title: "What is CET?",
+      content:
+        "A College of Engineering and Technology is an academic institution within a university or as a standalone entity that offers undergraduate and graduate programs in various engineering and technology fields. These colleges typically provide education and training in disciplines such as civil engineering, mechanical engineering, electrical engineering, computer science, information technology, aerospace engineering, chemical engineering, and many others.",
+      onClick: () => router.push("/chat/start")
+    },
+    {
+      title: "Courses offered by Holy Cross of Davao College?",
+      content:
+        "Holy Cross of Davao College (HCDC) offers a range of undergraduate and graduate programs across various fields. However, specific course offerings may vary over time, so it's best to directly consult the college's official website or contact them for the most up-to-date information.",
+      onClick: () => router.push("/chat/start")
+    }
+  ];
+
   return (
     <div className="flex">
       <Sidebar />
@@ -51,42 +77,23 @@ export default function Threads() {
                 </div>
               </div>
             </div>
-            <div className="py-4 border-b border-gray-300">
-              <Link href="/chat#chatbox">
-                <h1 className="text-black text-md font-semibold cursor-pointer transition duration-300 hover:text-red-800">
-                  What is the Prescribed haircut for Male?
-                </h1>
-              </Link>
-              <p className="text-black text-sm font-regular line-clamp-2">
-                The prescribed haircut for men typically refers to a haircut
-                that is required or recommended in certain formal, professional,
-                or institutional settings, such as the military, law
-                enforcement, certain schools, or corporate environments.
-              </p>
-            </div>
-            <div className="py-4 border-b border-gray-300">
-              <h1 className="text-black text-md font-semibold cursor-pointer transition duration-300 hover:text-red-800">
-                What is the Prescribed haircut for Male?
-              </h1>
-              <p className="text-black text-sm font-regular line-clamp-2">
-                The prescribed haircut for men typically refers to a haircut
-                that is required or recommended in certain formal, professional,
-                or institutional settings, such as the military, law
-                enforcement, certain schools, or corporate environments.
-              </p>
-            </div>
-            <div className="py-4 border-b border-gray-300">
-              <h1 className="text-black text-md font-semibold cursor-pointer transition duration-300 hover:text-red-800">
-                What is the Prescribed haircut for Male?
-              </h1>
-              <p className="text-black text-sm font-regular line-clamp-2">
-                The prescribed haircut for men typically refers to a haircut
-                that is required or recommended in certain formal, professional,
-                or institutional settings, such as the military, law
-                enforcement, certain schools, or corporate environments.
-              </p>
-            </div>
+            {threadsData.map((thread, index) => (
+              <div key={index}>
+                <div className="py-4 border-b border-gray-300">
+                  <h1
+                    className="text-black text-md font-semibold cursor-pointer transition duration-300 hover:text-red-800"
+                    onClick={thread.onClick}
+                  >
+                    {thread.title}
+                  </h1>
+                  <p className="text-black text-sm font-regular line-clamp-2">
+                    {thread.content}
+                  </p>
+                </div>
+              </div>
+            ))}
           </section>
+
 
           <section className="w-[300px] py-4">
             <div className="py-1 border-b border-gray-300">
