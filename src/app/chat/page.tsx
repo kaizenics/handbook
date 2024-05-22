@@ -121,7 +121,7 @@ export default function Chat() {
                 <div className="relative">
                   <input
                     placeholder="Ask Gab and Ana..."
-                    className="font-inter w-[1000px] h-[56px] outline-none py-4 pl-4 pr-14 text-black bg-gray-200 border border-gray-200 rounded-full placeholder:text-red-700"
+                    className="font-inter w-[1030px] h-[56px] outline-none py-4 pl-4 pr-14 text-black bg-gray-200 border border-gray-200 rounded-full placeholder:text-red-700"
                     type="text"
                   />
                   <button className="absolute font-montserrat bg-red-700 py-3 px-3 rounded-full top-2 right-2 transition duration-300 hover:bg-red-800">

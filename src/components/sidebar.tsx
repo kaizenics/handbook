@@ -11,7 +11,7 @@ import { MdContactPhone } from "react-icons/md";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 
 export const Sidebar = () => {
-  const [isCollapsed, setIsCollapsed] = useState(false);
+  const [isCollapsed, setIsCollapsed] = useState(true);
 
   const toggleSidebar = () => {
     setIsCollapsed(!isCollapsed);
@@ -21,7 +21,7 @@ export const Sidebar = () => {
 
   return (
     <div
-      className={`sticky top-0 h-screen bg-red-700 overflow-hidden border-r transition-all duration-300 ${
+      className={`sticky top-0 h-screen bg-red-700 overflow-hidden transition-all duration-300 ${
         isCollapsed ? "w-[85px]" : "w-[350px]"
       }`}
     >
@@ -87,14 +87,14 @@ export const Sidebar = () => {
           </span>
         </div>
         <div
-          onClick={() => router.push("/threads")}
+          onClick={() => router.push("/library")}
           className="flex items-center py-4 px-4 space-x-3 mx-2 rounded-md transition duration-300 hover:bg-red-600 cursor-pointer"
         >
           <FaListUl className="w-9 h-9" />
           <span
             className={`text-lg text-white ${isCollapsed ? "hidden" : "block"}`}
           >
-            Threads
+            Library
           </span>
         </div>
       </nav>
