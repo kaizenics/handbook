@@ -1,10 +1,10 @@
 import { Sidebar } from "~/components/sidebar";
-
 import { GoStack } from "react-icons/go";
 import { HiOutlineCollection } from "react-icons/hi";
 import { BsThreeDots } from "react-icons/bs";
 import { IoMdAdd } from "react-icons/io";
 import { FaSearch } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Threads() {
   return (
@@ -42,16 +42,29 @@ export default function Threads() {
                   <h1 className="text-black font-semibold pt-1">Threads</h1>
                 </div>
                 <div className="flex space-x-1">
-                  <button className="bg-red-800 text-white p-2 rounded-md">
+                  <button className="bg-red-800 text-white p-2 rounded-md transition duration-200 hover:bg-red-900">
                     <BsThreeDots className="w-[15px] h-[15px] text-white" />
                   </button>
-                  <button className="bg-red-800 text-white p-2 rounded-md">
+                  <button className="bg-red-800 text-white p-2 rounded-md transition duration-200 hover:bg-red-900">
                     <IoMdAdd className="w-[15px] h-[15px] text-white" />
                   </button>
                 </div>
               </div>
             </div>
-            <div className="py-2 border-b border-gray-300">
+            <div className="py-4 border-b border-gray-300">
+              <Link href="/chat#chatbox">
+                <h1 className="text-black text-md font-semibold cursor-pointer transition duration-300 hover:text-red-800">
+                  What is the Prescribed haircut for Male?
+                </h1>
+              </Link>
+              <p className="text-black text-sm font-regular line-clamp-2">
+                The prescribed haircut for men typically refers to a haircut
+                that is required or recommended in certain formal, professional,
+                or institutional settings, such as the military, law
+                enforcement, certain schools, or corporate environments.
+              </p>
+            </div>
+            <div className="py-4 border-b border-gray-300">
               <h1 className="text-black text-md font-semibold cursor-pointer transition duration-300 hover:text-red-800">
                 What is the Prescribed haircut for Male?
               </h1>
@@ -62,18 +75,7 @@ export default function Threads() {
                 enforcement, certain schools, or corporate environments.
               </p>
             </div>
-            <div className="py-2 border-b border-gray-300">
-              <h1 className="text-black text-md font-semibold cursor-pointer transition duration-300 hover:text-red-800">
-                What is the Prescribed haircut for Male?
-              </h1>
-              <p className="text-black text-sm font-regular line-clamp-2">
-                The prescribed haircut for men typically refers to a haircut
-                that is required or recommended in certain formal, professional,
-                or institutional settings, such as the military, law
-                enforcement, certain schools, or corporate environments.
-              </p>
-            </div>
-            <div className="py-2 border-b border-gray-300">
+            <div className="py-4 border-b border-gray-300">
               <h1 className="text-black text-md font-semibold cursor-pointer transition duration-300 hover:text-red-800">
                 What is the Prescribed haircut for Male?
               </h1>
@@ -96,7 +98,7 @@ export default function Threads() {
                   <h1 className="text-black font-semibold pt-1">Collections</h1>
                 </div>
                 <div className="flex space-x-1">
-                  <button className="bg-red-800 text-white p-2 rounded-md">
+                  <button className="bg-red-800 text-white p-2 rounded-md transition duration-200 hover:bg-red-900">
                     <IoMdAdd className="w-[15px] h-[15px] text-white" />
                   </button>
                 </div>
@@ -108,7 +110,7 @@ export default function Threads() {
                 <p className="text-black font-inter text-center text-sm">
                   Organize your threads. Categorize it or share to others!
                 </p>
-                <button className="bg-red-800 text-white py-1.5 rounded-md text-xs w-full">
+                <button className="bg-red-800 text-white py-1.5 rounded-md text-xs w-full transition duration-200 hover:bg-red-900">
                   Get Started
                 </button>
               </div>
