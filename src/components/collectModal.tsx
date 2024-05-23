@@ -46,14 +46,14 @@ const Modal: React.FC<ModalProps> = ({ show, onClose }) => {
           <input
             type="text"
             placeholder="Holy Cross of Davao College Courses"
-            className="w-full text-black py-1.5 px-4 border-2 rounded-full"
+            className="w-full text-black py-1 px-4 border-2 rounded-full focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition duration-200"
           />
         </div>
         <div className="py-2 space-y-1">
           <h1 className="text-black font-semibold text-md">Description<span className="font-light text-sm"> (Optional)</span></h1>
           <textarea
             placeholder="Holy Cross of Davao College Courses"
-            className="w-full h-28 text-black py-1.5 px-2 border-2 rounded-sm resize-none"
+            className="w-full h-28 text-black py-1.5 px-2 border-2 rounded-sm resize-none focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent transition duration-200"
           />
         </div>
 

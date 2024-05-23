@@ -9,6 +9,7 @@ import { AiFillInfoCircle } from "react-icons/ai";
 import { FaListUl } from "react-icons/fa";
 import { MdContactPhone } from "react-icons/md";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
+import { LuExternalLink } from "react-icons/lu";
 
 export const Sidebar = () => {
   const [isCollapsed, setIsCollapsed] = useState(true);
@@ -95,6 +96,17 @@ export const Sidebar = () => {
             className={`text-lg text-white ${isCollapsed ? "hidden" : "block"}`}
           >
             Library
+          </span>
+        </div>
+        <div
+          onClick={() => router.push("/library")}
+          className="flex items-center py-4 px-4 space-x-3 mx-2 rounded-md transition duration-300 hover:bg-red-600 cursor-pointer"
+        >
+          <LuExternalLink  className="w-9 h-9" />
+          <span
+            className={`text-lg text-white ${isCollapsed ? "hidden" : "block"}`}
+          >
+            <a href="https://studentportal.hcdc.edu.ph/login" target="_blank">Student Portal</a>
           </span>
         </div>
       </nav>
