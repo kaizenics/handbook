@@ -98,15 +98,24 @@ export const Sidebar = () => {
             Library
           </span>
         </div>
-        <div
-          onClick={() => router.push("/library")}
-          className="flex items-center py-4 px-4 space-x-3 mx-2 rounded-md transition duration-300 hover:bg-red-600 cursor-pointer"
-        >
-          <LuExternalLink  className="w-9 h-9" />
+        <div className={`flex items-center py-4 px-4 space-x-3 mx-2 rounded-md transition duration-300 hover:bg-red-600 cursor-pointer ${isCollapsed ? "hidden" : "block"}`}>
+          <LuExternalLink className="w-9 h-9" />
           <span
-            className={`text-lg text-white ${isCollapsed ? "hidden" : "block"}`}
+            className="text-lg text-white"
           >
-            <a href="https://studentportal.hcdc.edu.ph/login" target="_blank">Student Portal</a>
+            <a href="https://studentportal.hcdc.edu.ph/login" target="_blank">
+              Student Portal
+            </a>
+          </span>
+        </div>
+        <div className={`flex items-center py-4 px-4 space-x-3 mx-2 rounded-md transition duration-300 hover:bg-red-600 cursor-pointer ${isCollapsed ? "hidden" : "block"}`}>
+          <LuExternalLink className="w-9 h-9" />
+          <span
+            className="text-lg text-white"
+          >
+            <a href="https://www.hcdc.edu.ph/" target="_blank">
+              HCDC Page
+            </a>
           </span>
         </div>
       </nav>

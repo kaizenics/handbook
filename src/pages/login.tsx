@@ -3,12 +3,14 @@ import { useState } from "react";
 import Image from "next/image";
 import { FaUser } from "react-icons/fa";
 import { FaLock } from "react-icons/fa";
-
+import { useRouter } from "next/navigation";
 import hcdcIcon from "~/assets/images/hcdc-icon.png";
 import hcdcStroke from "~/assets/images/hcdc-stroke.png";
 import hcdcLogo from "~/assets/images/hcdclogo.png";
 
 export const Login = () => {
+  const router = useRouter();
+
     return (
         <>
         <main>
@@ -69,7 +71,9 @@ export const Login = () => {
                 Forgot password?
               </h1>
             </div>
-            <button className="w-[120px] h-[40px] font-inter font-bold bg-white text-red-500 rounded-md my-4">
+            <button className="w-[120px] h-[40px] font-inter font-bold bg-white text-red-500 rounded-md my-4"
+            onClick={() => router.push("/chat")}
+            >
               Login
             </button>
           </div>
