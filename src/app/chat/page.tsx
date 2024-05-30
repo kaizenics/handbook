@@ -38,7 +38,7 @@ export default function Chat() {
                 </div>
               </div>
               <div className="flex justify-center items-center">
-                <div className="font-inter grid grid-cols-4 gap-2 justify-center items-center my-6">
+                <div className="font-inter grid lg:grid-cols-4 sm:grid-cols-2 gap-2 justify-center items-center my-6">
                   {[
                     "What is the prescribe haircut for males?",
                     "What is CET?",
@@ -64,16 +64,16 @@ export default function Chat() {
           </div>
 
           </div>
-          <div className="sticky bottom-0 w-full px-4 pb-4 bg-white">
-            <div className="flex justify-center">
-              <div className="relative w-full lg:w-1/2 px-2">
+          <div className="sticky bottom-0 w-full pb-4 bg-white">
+            <div className="flex justify-center px-2">
+              <div className="relative w-full max-w-2xl">
                 <input
                   placeholder="Ask Gab and Ana..."
                   className="w-full h-[57px] px-4 pr-14 py-2 text-black bg-gray-200 border border-gray-200 rounded-full placeholder:text-red-700 outline-none"
                   type="text"
                 />
                 <button
-                  className="absolute top-2 right-5 bg-red-700 p-3 rounded-full transition duration-300 hover:bg-red-800"
+                  className="absolute top-2 right-3 bg-red-700 p-3 rounded-full transition duration-300 hover:bg-red-800"
                   onClick={() => router.push("/chat/start")}
                 >
                   <FaArrowUp className="w-[20px] h-[20px] text-white" />
