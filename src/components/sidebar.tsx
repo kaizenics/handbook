@@ -23,7 +23,7 @@ export const Sidebar = () => {
   return (
     <div
       className={`sticky top-0 h-screen bg-red-700 overflow-hidden transition-all duration-300 ${
-        isCollapsed ? "w-[85px]" : "w-[350px]"
+        isCollapsed ? "w-[80px]" : "w-[250px]"
       }`}
     >
       <div className="flex items-center justify-between mt-8 mx-6">
@@ -42,12 +42,12 @@ export const Sidebar = () => {
       </div>
       {!isCollapsed && (
         <div className="flex flex-col items-center mt-8">
-          <div className="mt-10">
-            <h1 className="mt-4 font-inter text-3xl font-bold tracking-tighter uppercase">
+          <div className="mt-4">
+            <h1 className="mt-4 font-inter text-xl font-bold tracking-tighter uppercase">
               Student Handbook
             </h1>
-            <div className="flex space-x-1 ml-36">
-              <p className="font-inter font-thin text-xl">an AI Assistant</p>
+            <div className="flex space-x-1 ml-20">
+              <p className="font-inter font-thin text-sm">an AI Assistant</p>
               <VscSparkleFilled className="w-[25px] h-[25px]" />
             </div>
           </div>
@@ -58,9 +58,9 @@ export const Sidebar = () => {
           onClick={() => router.push("/chat")}
           className="flex items-center py-3 px-4 space-x-3 mx-2 rounded-md transition duration-300 hover:bg-red-600 cursor-pointer"
         >
-          <AiFillHome className="w-9 h-9" />
+          <AiFillHome className="w-8 h-8" />
           <span
-            className={`text-lg text-white ${isCollapsed ? "hidden" : "block"}`}
+            className={`text-md text-white ${isCollapsed ? "hidden" : "block"}`}
           >
             Home
           </span>
@@ -69,9 +69,9 @@ export const Sidebar = () => {
           onClick={() => router.push("/about")}
           className="flex items-center py-4 px-4 space-x-3 mx-2 rounded-md transition duration-300 hover:bg-red-600 cursor-pointer"
         >
-          <AiFillInfoCircle className="w-9 h-9" />
+          <AiFillInfoCircle className="w-8 h-8" />
           <span
-            className={`text-lg text-white ${isCollapsed ? "hidden" : "block"}`}
+            className={`text-md text-white ${isCollapsed ? "hidden" : "block"}`}
           >
             About
           </span>
@@ -80,9 +80,9 @@ export const Sidebar = () => {
           onClick={() => router.push("/contact")}
           className="flex items-center py-4 px-4 space-x-3 mx-2 rounded-md transition duration-300 hover:bg-red-600 cursor-pointer"
         >
-          <MdContactPhone className="w-9 h-9" />
+          <MdContactPhone className="w-8 h-8" />
           <span
-            className={`text-lg text-white ${isCollapsed ? "hidden" : "block"}`}
+            className={`text-md text-white ${isCollapsed ? "hidden" : "block"}`}
           >
             Contact
           </span>
@@ -91,17 +91,17 @@ export const Sidebar = () => {
           onClick={() => router.push("/library")}
           className="flex items-center py-4 px-4 space-x-3 mx-2 rounded-md transition duration-300 hover:bg-red-600 cursor-pointer"
         >
-          <FaListUl className="w-9 h-9" />
+          <FaListUl className="w-8 h-8" />
           <span
-            className={`text-lg text-white ${isCollapsed ? "hidden" : "block"}`}
+            className={`text-md text-white ${isCollapsed ? "hidden" : "block"}`}
           >
             Library
           </span>
         </div>
         <div className={`flex items-center py-4 px-4 space-x-3 mx-2 rounded-md transition duration-300 hover:bg-red-600 cursor-pointer ${isCollapsed ? "hidden" : "block"}`}>
-          <LuExternalLink className="w-9 h-9" />
+          <LuExternalLink className="w-8 h-8" />
           <span
-            className="text-lg text-white"
+            className="text-md text-white"
           >
             <a href="https://studentportal.hcdc.edu.ph/login" target="_blank">
               Student Portal
@@ -109,9 +109,9 @@ export const Sidebar = () => {
           </span>
         </div>
         <div className={`flex items-center py-4 px-4 space-x-3 mx-2 rounded-md transition duration-300 hover:bg-red-600 cursor-pointer ${isCollapsed ? "hidden" : "block"}`}>
-          <LuExternalLink className="w-9 h-9" />
+          <LuExternalLink className="w-8 h-8" />
           <span
-            className="text-lg text-white"
+            className="text-md text-white"
           >
             <a href="https://www.hcdc.edu.ph/" target="_blank">
               HCDC Page
