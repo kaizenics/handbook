@@ -7,8 +7,6 @@ import { FaSearch } from "react-icons/fa";
 import { FaWandMagicSparkles } from "react-icons/fa6";
 import { FaArrowUp } from "react-icons/fa6";
 
-import hcdcStroke from "~/assets/images/hcdc-stroke.png";
-
 export default function Chat() {
   const router = useRouter();
 
