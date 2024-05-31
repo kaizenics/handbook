@@ -13,7 +13,6 @@ export default function Chat() {
 
   return (
     <>
-    {/* Add the chat page content here */}
       <div className="flex h-screen overflow-hidden">
         <SideBar />
         <div className="flex-1 mx-auto flex flex-col">
@@ -39,6 +38,23 @@ export default function Chat() {
                   </div>
                 </div>
               </div>
+              <div className="block md:hidden w-full pt-8 bg-white">
+            <div className="flex justify-center px-2">
+              <div className="relative w-full lg:max-w-3xl md:max-w-lg sm:max-w-md max-w-md">
+                <input
+                  placeholder="Ask Gab and Ana..."
+                  className="w-full h-[57px] px-4 pr-14 py-2 text-black bg-gray-200 border border-gray-200 rounded-full placeholder:text-red-700 outline-none"
+                  type="text"
+                />
+                <button
+                  className="absolute top-2 right-3 bg-red-700 p-3 rounded-full transition duration-300 hover:bg-red-800"
+                  onClick={() => router.push("/chat/start")}
+                >
+                  <FaArrowUp className="w-[20px] h-[20px] text-white" />
+                </button>
+              </div>
+            </div>
+          </div>
               <div className="flex justify-center items-center">
                 <div className="font-inter grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 sm:gap-2 gap-1 justify-center items-center my-6">
                   {[
@@ -65,7 +81,7 @@ export default function Chat() {
               </div>
             </div>
           </div>
-          <div className="sticky bottom-0 w-full pb-4 bg-white">
+          <div className="hidden md:block w-full pb-4 bg-white">
             <div className="flex justify-center px-2">
               <div className="relative w-full lg:max-w-3xl md:max-w-lg sm:max-w-md max-w-md">
                 <input
