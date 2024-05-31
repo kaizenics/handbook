@@ -65,7 +65,7 @@ export default function Chat() {
                   ].map((text, idx) => (
                     <div
                       key={idx}
-                      className="relative sm:w-[180px] sm:h-[120px] h-[50px] mx-3 sm:mx-0 bg-red-700 border rounded-md transition-all duration-300 hover:sm:scale-105 cursor-pointer p-4"
+                      className="relative sm:w-[180px] sm:h-[120px] w-[85vw] h-[50px] mx-3 sm:mx-0 bg-red-700 border rounded-md transition-all duration-300 hover:sm:scale-105 cursor-pointer p-4"
                     >
                       <p className="sm:text-balance line-clamp-1 sm:line-clamp-none text-white text-sm">{text}</p>
                       <FaSearch className="w-5 h-5 absolute bottom-3 right-3 text-white hidden sm:block" />
