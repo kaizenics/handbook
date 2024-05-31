@@ -1,7 +1,7 @@
 // library/page.tsx
 "use client";
 import { useState } from "react";
-import { Sidebar } from "~/components/sidebar";
+import { SideBar } from "~/components/sidebar";
 import { GoStack } from "react-icons/go";
 import { HiOutlineCollection } from "react-icons/hi";
 import { BsThreeDots } from "react-icons/bs";
@@ -39,7 +39,7 @@ export default function Threads() {
 
   return (
     <div className="flex">
-      <Sidebar />
+      <SideBar />
       <div className="flex-1 relative">
         <div className="flex justify-center">
           <div className="w-full h-[100px] border-b border-gray-300">
