@@ -18,12 +18,12 @@ export const MobileBar = () => {
   return (
     <>
       <div className="block md:hidden">
-        <div className="sticky bottom-0 w-full h-16 bg-red-700">
+        <div className="fixed bottom-0 w-full h-16 bg-red-700">
           <div className="flex flex-row justify-center">
             <div
               onClick={() => handleNavigation("/chat", "home")}
               className={`py-1 w-[25vw] cursor-pointer ${
-                active === "home" ? "border-t-444 border-blue-500" : ""
+                active === "home" ? "border-t-4 border-blue-500" : ""
               }`}
             >
               <div className="flex flex-col items-center">
