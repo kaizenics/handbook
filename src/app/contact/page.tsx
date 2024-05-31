@@ -1,4 +1,4 @@
-import { Sidebar } from "~/components/sidebar";
+import { SideBar } from "~/components/sidebar";
 import Image from "next/image";
 
 import { TbSocial } from "react-icons/tb";
@@ -10,7 +10,7 @@ import hcdcIcon from "~/assets/images/hcdc-icon.png";
 export default function Contact() {
   return (
     <div className="flex">
-      <Sidebar />
+      <SideBar />
       <div className="flex-1">
         <section>
           <div className="relative h-[200px] border-b-2 border-gray-300">

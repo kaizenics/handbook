@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { Sidebar } from "~/components/sidebar";
+import { SideBar } from "~/components/sidebar";
+import { MobileBar } from "~/components/mobilebar";
 import { VscSparkleFilled } from "react-icons/vsc";
 import { IoMdChatbubbles } from "react-icons/io";
 import { GoCodeOfConduct } from "react-icons/go";
@@ -13,7 +14,7 @@ import oldHcdc from "~/assets/images/old-hcdc.jpg";
 export default function About() {
   return (
     <div className="flex">
-      <Sidebar />
+      <SideBar />
       <div className="flex-1 relative">
         <div className="relative">
           <Image
@@ -179,6 +180,7 @@ export default function About() {
             </div>
           </section>
         </section>
+        <MobileBar />
       </div>
     </div>
   );
