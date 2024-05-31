@@ -27,7 +27,7 @@ export default function Chat() {
             <div className="max-w-screen-lg h-full px-md mx-auto">
               <div className="flex relative justify-center items-center">
                 <div className="mt-0">
-                  <h1 className="mt-4 text-black font-montserrat lg:text-4xl sm:text-3xl text-[6vw] font-bold tracking-tighter uppercase">
+                  <h1 className="mt-4 text-black font-montserrat lg:text-4xl sm:text-3xl text-[6.5vw] font-bold tracking-tighter uppercase">
                     HCDC Student Handbook
                   </h1>
                   <div className="flex space-x-1 justify-end">
@@ -38,16 +38,16 @@ export default function Chat() {
                   </div>
                 </div>
               </div>
-              <div className="block md:hidden w-full pt-8 bg-white">
+              <div className="block md:hidden w-full pt-5 bg-white">
             <div className="flex justify-center px-2">
               <div className="relative w-full lg:max-w-3xl md:max-w-lg sm:max-w-md max-w-md">
                 <input
                   placeholder="Ask Gab and Ana..."
-                  className="w-full h-[57px] px-4 pr-14 py-2 text-black bg-gray-200 border border-gray-200 rounded-full placeholder:text-red-700 outline-none"
+                  className="w-full h-[50px] px-4 pr-14 py-4 text-sm text-black bg-gray-200 border border-gray-200 rounded-full placeholder:text-red-700 outline-none"
                   type="text"
                 />
                 <button
-                  className="absolute top-2 right-3 bg-red-700 p-3 rounded-full transition duration-300 hover:bg-red-800"
+                  className="absolute top-2 right-3 bg-red-700 p-2 rounded-full transition duration-300 hover:bg-red-800"
                   onClick={() => router.push("/chat/start")}
                 >
                   <FaArrowUp className="w-[20px] h-[20px] text-white" />
@@ -86,11 +86,11 @@ export default function Chat() {
               <div className="relative w-full lg:max-w-3xl md:max-w-lg sm:max-w-md max-w-md">
                 <input
                   placeholder="Ask Gab and Ana..."
-                  className="w-full h-[57px] px-4 pr-14 py-2 text-black bg-gray-200 border border-gray-200 rounded-full placeholder:text-red-700 outline-none"
+                  className="w-full h-[50px] px-4 pr-14 py-4 text-black bg-gray-200 border border-gray-200 rounded-full placeholder:text-red-700 outline-none"
                   type="text"
                 />
                 <button
-                  className="absolute top-2 right-3 bg-red-700 p-3 rounded-full transition duration-300 hover:bg-red-800"
+                  className="absolute top-2 right-2 bg-red-700 p-2 rounded-full transition duration-300 hover:bg-red-800"
                   onClick={() => router.push("/chat/start")}
                 >
                   <FaArrowUp className="w-[20px] h-[20px] text-white" />

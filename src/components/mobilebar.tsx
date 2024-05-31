@@ -19,12 +19,22 @@ export const MobileBar = () => {
     <>
       <div className="block md:hidden">
         <div className="fixed bottom-0 w-full h-16 bg-red-700">
-          <div className="flex flex-row justify-center">
+          <div className="flex flex-row justify-center relative">
+            {active === "home" && (
+              <div className="absolute top-1 left-[12.5%] transform -translate-x-1/2 -translate-y-1/2 bg-blue-500 w-[25vw] h-2 "></div>
+            )}
+            {active === "about" && (
+              <div className="absolute top-1 left-[37.5%] transform -translate-x-1/2 -translate-y-1/2 bg-blue-500 w-[25vw] h-2 "></div>
+            )}
+            {active === "contact" && (
+              <div className="absolute top-1 left-[62.5%] transform -translate-x-1/2 -translate-y-1/2 bg-blue-500 w-[25vw] h-2 "></div>
+            )}
+            {active === "library" && (
+              <div className="absolute top-1 left-[87.5%] transform -translate-x-1/2 -translate-y-1/2 bg-blue-500 w-[25vw] h-2 "></div>
+            )}
             <div
               onClick={() => handleNavigation("/chat", "home")}
-              className={`py-1 w-[25vw] cursor-pointer ${
-                active === "home" ? "border-t-4 border-blue-500" : ""
-              }`}
+              className={`py-2 w-[25vw] cursor-pointer`}
             >
               <div className="flex flex-col items-center">
                 <AiFillHome className="w-7 h-7" />
@@ -33,9 +43,7 @@ export const MobileBar = () => {
             </div>
             <div
               onClick={() => handleNavigation("/about", "about")}
-              className={`py-1 w-[25vw] cursor-pointer ${
-                active === "about" ? "border-t-4 border-blue-500" : ""
-              }`}
+              className={`py-2 w-[25vw] cursor-pointer`}
             >
               <div className="flex flex-col items-center">
                 <AiFillInfoCircle className="w-7 h-7" />
@@ -44,9 +52,7 @@ export const MobileBar = () => {
             </div>
             <div
               onClick={() => handleNavigation("/contact", "contact")}
-              className={`py-1 w-[25vw] cursor-pointer ${
-                active === "contact" ? "border-t-4 border-blue-500" : ""
-              }`}
+              className={`py-2 w-[25vw] cursor-pointer`}
             >
               <div className="flex flex-col items-center">
                 <MdContactPhone className="w-7 h-7" />
@@ -55,9 +61,7 @@ export const MobileBar = () => {
             </div>
             <div
               onClick={() => handleNavigation("/library", "library")}
-              className={`py-1 w-[25vw] cursor-pointer ${
-                active === "library" ? "border-t-4 border-blue-500" : ""
-              }`}
+              className={`py-2 w-[25vw] cursor-pointer`}
             >
               <div className="flex flex-col items-center">
                 <FaListUl className="w-7 h-7" />
