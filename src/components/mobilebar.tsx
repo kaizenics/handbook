@@ -17,8 +17,8 @@ export const MobileBar = () => {
 
   return (
     <>
-      <div className="block md:hidden">
-        <div className="sticky bottom-0 w-full h-16 bg-red-700">
+      <div className="sticky bottom-0 block md:hidden">
+        <div className="w-full h-16 bg-red-700">
           <div className="flex flex-row justify-center">
             <div
               onClick={() => handleNavigation("/chat", "home")}
