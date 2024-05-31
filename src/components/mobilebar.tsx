@@ -34,38 +34,38 @@ export const MobileBar = () => {
             )}
             <div
               onClick={() => handleNavigation("/chat", "home")}
-              className={`py-2 w-[25vw] cursor-pointer`}
+              className={`py-3 w-[25vw] cursor-pointer`}
             >
               <div className="flex flex-col items-center">
-                <AiFillHome className="w-7 h-7" />
-                <span className="text-sm text-white">Home</span>
+                <AiFillHome className="w-6 h-6" />
+                <span className="text-sm font-semibold text-white">Home</span>
               </div>
             </div>
             <div
               onClick={() => handleNavigation("/about", "about")}
-              className={`py-2 w-[25vw] cursor-pointer`}
+              className={`py-3 w-[25vw] cursor-pointer`}
             >
               <div className="flex flex-col items-center">
-                <AiFillInfoCircle className="w-7 h-7" />
-                <span className="text-sm text-white">About</span>
+                <AiFillInfoCircle className="w-6 h-6" />
+                <span className="text-sm font-semibold text-white">About</span>
               </div>
             </div>
             <div
               onClick={() => handleNavigation("/contact", "contact")}
-              className={`py-2 w-[25vw] cursor-pointer`}
+              className={`py-3 w-[25vw] cursor-pointer`}
             >
               <div className="flex flex-col items-center">
-                <MdContactPhone className="w-7 h-7" />
-                <span className="text-sm text-white">Contact</span>
+                <MdContactPhone className="w-6 h-6" />
+                <span className="text-sm font-semibold text-white">Contact</span>
               </div>
             </div>
             <div
               onClick={() => handleNavigation("/library", "library")}
-              className={`py-2 w-[25vw] cursor-pointer`}
+              className={`py-3 w-[25vw] cursor-pointer`}
             >
               <div className="flex flex-col items-center">
-                <FaListUl className="w-7 h-7" />
-                <span className="text-sm text-white">Library</span>
+                <FaListUl className="w-6 h-6" />
+                <span className="text-sm font-semibold text-white">Library</span>
               </div>
             </div>
           </div>
