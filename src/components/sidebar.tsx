@@ -61,7 +61,9 @@ export const SideBar = () => {
           >
             <AiFillHome className="w-8 h-8" />
             <span
-              className={`text-md text-white ${isCollapsed ? "hidden" : "block"}`}
+              className={`text-md text-white ${
+                isCollapsed ? "hidden" : "block"
+              }`}
             >
               Home
             </span>
@@ -72,7 +74,9 @@ export const SideBar = () => {
           >
             <AiFillInfoCircle className="w-8 h-8" />
             <span
-              className={`text-md text-white ${isCollapsed ? "hidden" : "block"}`}
+              className={`text-md text-white ${
+                isCollapsed ? "hidden" : "block"
+              }`}
             >
               About
             </span>
@@ -83,7 +87,9 @@ export const SideBar = () => {
           >
             <MdContactPhone className="w-8 h-8" />
             <span
-              className={`text-md text-white ${isCollapsed ? "hidden" : "block"}`}
+              className={`text-md text-white ${
+                isCollapsed ? "hidden" : "block"
+              }`}
             >
               Contact
             </span>
@@ -94,35 +100,39 @@ export const SideBar = () => {
           >
             <FaListUl className="w-8 h-8" />
             <span
-              className={`text-md text-white ${isCollapsed ? "hidden" : "block"}`}
+              className={`text-md text-white ${
+                isCollapsed ? "hidden" : "block"
+              }`}
             >
               Library
             </span>
           </div>
-          <div className={`flex items-center py-4 px-4 space-x-3 mx-2 rounded-md transition duration-300 hover:bg-red-600 cursor-pointer ${isCollapsed ? "hidden" : "block"}`}>
+          <div
+            className={`flex items-center py-4 px-4 space-x-3 mx-2 rounded-md transition duration-300 hover:bg-red-600 cursor-pointer ${
+              isCollapsed ? "hidden" : "block"
+            }`}
+          >
             <LuExternalLink className="w-8 h-8" />
-            <span
-              className="text-md text-white"
-            >
+            <span className="text-md text-white">
               <a href="https://studentportal.hcdc.edu.ph/login" target="_blank">
                 Student Portal
               </a>
             </span>
           </div>
-          <div className={`flex items-center py-4 px-4 space-x-3 mx-2 rounded-md transition duration-300 hover:bg-red-600 cursor-pointer ${isCollapsed ? "hidden" : "block"}`}>
+          <div
+            className={`flex items-center py-4 px-4 space-x-3 mx-2 rounded-md transition duration-300 hover:bg-red-600 cursor-pointer ${
+              isCollapsed ? "hidden" : "block"
+            }`}
+          >
             <LuExternalLink className="w-8 h-8" />
-            <span
-              className="text-md text-white"
-            >
+            <span className="text-md text-white">
               <a href="https://www.hcdc.edu.ph/" target="_blank">
                 HCDC Page
               </a>
             </span>
           </div>
         </nav>
-        
       </div>
-     
     </>
   );
 };
