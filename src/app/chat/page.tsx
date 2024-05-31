@@ -13,6 +13,7 @@ export default function Chat() {
 
   return (
     <>
+    {/* Add the chat page content here */}
       <div className="flex h-screen overflow-hidden">
         <SideBar />
         <div className="flex-1 mx-auto flex flex-col">
