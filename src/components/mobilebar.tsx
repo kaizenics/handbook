@@ -17,7 +17,7 @@ export const MobileBar = () => {
 
   return (
     <>
-      <div className="block md:hidden">
+      <div className="font-montserrat block md:hidden">
         <div className="fixed bottom-0 w-full h-16 bg-red-700">
           <div className="flex flex-row justify-center relative">
             {active === "home" && (

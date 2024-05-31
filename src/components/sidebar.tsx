@@ -44,17 +44,17 @@ export const SideBar = () => {
         {!isCollapsed && (
           <div className="flex flex-col items-center mt-8">
             <div className="mt-4">
-              <h1 className="mt-4 font-inter text-xl font-bold tracking-tighter uppercase">
+              <h1 className="mt-4 font-montserrat text-xl font-bold tracking-tighter uppercase">
                 Student Handbook
               </h1>
               <div className="flex space-x-1 ml-20">
-                <p className="font-inter font-thin text-sm">an AI Assistant</p>
+                <p className="font-montserrat text-sm">an AI Assistant</p>
                 <VscSparkleFilled className="w-[25px] h-[25px]" />
               </div>
             </div>
           </div>
         )}
-        <nav className="font-inter font-thin flex flex-col my-10">
+        <nav className="font-inter flex flex-col my-10">
           <div
             onClick={() => router.push("/chat")}
             className="flex items-center py-3 px-4 space-x-3 mx-2 rounded-md transition duration-300 hover:bg-red-600 cursor-pointer"
