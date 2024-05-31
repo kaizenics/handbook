@@ -21,17 +21,17 @@ export default function Chat() {
           <div className="flex-1 overflow-y-hidden">
             <div className="sticky top-0 border-b-2 bg-white">
               <div className="flex justify-between px-6 py-3">
-                <h1 className="text-black text-lg sm:text-xl">Welcome, <span className="font-semibold text-blue-500">Nicose John!</span></h1>
+                <h1 className="text-black text-md sm:text-xl">Welcome, <span className="font-semibold text-blue-500">Nicose John!</span></h1>
                 <div className="flex space-x-5 items-center">
-                  <FaBell className="w-7 h-7 text-red-800 cursor-pointer" />
-                  <FaUserAlt className="w-7 h-7 text-red-800 cursor-pointer" />
+                  <FaBell className="sm:w-7 sm:h-7 w-6 h-6 text-red-800 cursor-pointer" />
+                  <FaUserAlt className="sm:w-7 sm:h-7 w-6 h-6 text-red-800 cursor-pointer" />
                 </div>
               </div>
             </div>
 
             <div className="max-w-screen-lg h-full px-md mx-auto">
               <div className="flex relative justify-center items-center">
-                <div className="mt-20">
+                <div className="mt-5 sm:mt-20">
                   <h1 className="mt-4 text-black font-montserrat lg:text-4xl sm:text-3xl text-[6.5vw] font-bold tracking-tighter uppercase">
                     HCDC Student Handbook
                   </h1>
