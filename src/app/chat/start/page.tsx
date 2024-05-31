@@ -1,4 +1,4 @@
-import { Sidebar } from "~/components/sidebar";
+import { SideBar } from "~/components/sidebar";
 import { useRouter } from "next/navigation";
 import { VscSparkleFilled } from "react-icons/vsc";
 import { FaArrowUp } from "react-icons/fa6";
@@ -8,7 +8,7 @@ export default function Start() {
 
   return (
     <div className="flex">
-      <Sidebar />
+      <SideBar />
       <div className="flex-1 relative">
         <div className="">
         <div className="font-inter max-w-screen-lg w-[65%] mx-auto my-7">

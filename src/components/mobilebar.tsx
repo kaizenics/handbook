@@ -17,8 +17,7 @@ export const MobileBar = () => {
 
   return (
     <>
-    {/* Desktop */}
-      <div className=" block md:hidden">
+      <div className="block md:hidden">
         <div className="sticky bottom-0 w-full h-16 bg-red-700">
           <div className="flex flex-row justify-center">
             <div
